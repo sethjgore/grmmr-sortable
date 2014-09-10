@@ -21,15 +21,6 @@
   "dependencies": {
     "angular": "1.2.x"
   },
-  "devDependencies": {
-    "angular": "1.2.x",
-    "bootstrap": "~3.0.3",
-    "angular-bootstrap": "~0.10.0",
-    "angular-mocks": "1.2.x",
-    "angular-scenario": "1.2.x",
-    "angular-route": "1.2.x",
-    "ng-sortable": "1.1"
-  },
   "ignore": [
     "node_modules", "bower_components",
     "test", "demo", "source", ".gitignore",

@@ -582,6 +582,7 @@
 
             placeHolder = angular.element($document[0].createElement(tagName)).addClass(sortableConfig.placeHolderClass);
             placeHolder.css('height', $helper.height(scope.itemScope.element) + 'px');
+            placeHolder.css('width', $helper.width(scope.itemScope.element) + 'px');
 
             placeElement = angular.element($document[0].createElement(tagName));
             if (sortableConfig.hiddenClass) {
