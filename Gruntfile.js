@@ -41,12 +41,6 @@ module.exports = function (grunt) {
         ],
         tasks: ['jshint:source', 'clean:build', 'concat:build', 'uglify:build', 'cssmin', 'copy']
       },
-      cssmin: {
-        files: [
-          '<%= cfg.srcDir %>/**/*.css'
-        ],
-        tasks: ['cssmin', 'copy']
-      }
     },
 
     // clean up files as part of other tasks
@@ -137,17 +131,6 @@ module.exports = function (grunt) {
       }
     },
 
-    cssmin: {
-      add_banner: {
-        options: {
-          banner: '/* ng-sortable css file */'
-        },
-        files: {
-          '<%= cfg.buildDir %>/ng-sortable.min.css': ['<%= cfg.srcDir %>/ng-sortable.css']
-        }
-      }
-    },
-
     // open
     open: {
       server: {
@@ -203,7 +186,7 @@ module.exports = function (grunt) {
 
   // default
   grunt.registerTask('default', ['tasks_list:project']);
-  grunt.registerTask('build', ['jshint:source', 'clean:build', 'concat:build', 'cssmin', 'uglify:build', 'copy']);
+  grunt.registerTask('build', ['jshint:source', 'clean:build', 'concat:build', 'uglify:build', 'copy']);
   grunt.registerTask('server', ['open', 'connect:demo', 'watch']);
   grunt.registerTask('test', ['karma:single']);
   grunt.registerTask('test:continuous', ['karma:continuous']);

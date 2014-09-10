@@ -8,7 +8,6 @@
   "main": [
     "dist/ng-sortable.js",
     "dist/ng-sortable.min.js",
-    "dist/ng-sortable.min.css"
   ],
   "keywords": [
     "angular",
