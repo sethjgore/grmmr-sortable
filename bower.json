@@ -1,29 +1,18 @@
 {
   "name": "grmmr-sortable",
-  "version": "1.1.0",
-  "homepage": "https://github.com/a5hik/ng-sortable",
-  "author": "Muhammed Ashik <https://github.com/a5hik>",
-  "description": "Angular Library for Drag and Drop, supports Sortable and Draggable.",
+  "version": "1.1.1",
+  "homepage": "https://github.com/greenbridge/ng-sortable",
+  "authors": [
+    "sethjgore <sethjgore@gmail.com>"
+  ],
+  "main": "dist/ng-sortable.js",
   "license": "MIT",
-  "main": [
-    "dist/ng-sortable.js",
-  ],
-  "keywords": [
-    "angular",
-    "drag",
-    "drop",
-    "sortable",
-    "draggable",
-    "touch",
-    "directive"
-  ],
-  "dependencies": {
-    "angular": "1.2.x"
-  },
+  "private": true,
   "ignore": [
-    "node_modules", "bower_components",
-    "test", "demo", "source", ".gitignore",
-    ".jshintrc", ".travis.yml", "Gruntfile.js",
-    ".bowerrc", "karma.conf.js", "package.json"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ]
 }
