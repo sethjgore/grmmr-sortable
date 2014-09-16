@@ -359,7 +359,7 @@
            * Binds the drag start events.
            */
           bindDrag = function () {
-            element.bind('touchstart', dragStart);
+            element.bind('drag', dragStart);
             element.bind('mousedown', dragStart);
           };
 
@@ -377,8 +377,8 @@
            * Binds the events based on the actions.
            */
           bindEvents = function () {
-            angular.element($document).bind('touchmove', dragMove);
-            angular.element($document).bind('touchend', dragEnd);
+            angular.element($document).bind('drag', dragMove);
+            angular.element($document).bind('dragend', dragEnd);
             angular.element($document).bind('touchcancel', dragCancel);
             angular.element($document).bind('mousemove', dragMove);
             angular.element($document).bind('mouseup', dragEnd);
@@ -388,7 +388,7 @@
            * Un binds the events for drag support.
            */
           unBindEvents = function () {
-            angular.element($document).unbind('touchend', dragEnd);
+            angular.element($document).unbind('dragend', dragEnd);
             angular.element($document).unbind('touchcancel', dragCancel);
             angular.element($document).unbind('touchmove', dragMove);
             angular.element($document).unbind('mouseup', dragEnd);
